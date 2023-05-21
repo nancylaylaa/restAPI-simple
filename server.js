@@ -38,5 +38,5 @@ app.post("/body", (req, res) => {
 
 // server:3000/
 app.listen(port, () => {
-   console.log(`Server berhasil berjalan pada port ${port}`);
+   console.log(`Server berhasill berjalan pada port ${port}`);
 });
