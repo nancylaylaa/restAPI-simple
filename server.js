@@ -18,8 +18,8 @@ app.get("/", (req, res) => {
 });
 
 // localhost:3000/find?name=jeruk
-app.get("/find", (req, res) => {
-   const sql = `SELECT benefit FROM information WHERE name = ${req.query.name}`;
+app.get("/find/:name", (req, res) => {
+   const sql = `SELECT benefit FROM information WHERE name = ${name}`;
    db.query(sql, (error, result) => {
       response(200, result, "find benefit", res);
    });
