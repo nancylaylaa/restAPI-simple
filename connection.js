@@ -1,9 +1,9 @@
 const mysql = require("mysql");
 
 const db = mysql.createConnection({
-   host: "localhost",
+   host: "34.30.130.69",
    user: "root",
-   password: "",
+   password: "laylana",
    database: "capstone_v1",
 });
 
